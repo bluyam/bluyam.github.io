@@ -1,9 +1,9 @@
 function initialize() {
 
   var markers = [];
-  var map = new google.maps.Map(document.getElementById('map-canvas'), {
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  });
+  //var map = new google.maps.Map(document.getElementById('map-canvas'), {
+  //  mapTypeId: google.maps.MapTypeId.ROADMAP
+  //});
 
   var defaultBounds = new google.maps.LatLngBounds(
       new google.maps.LatLng(-33.8902, 151.1759),
