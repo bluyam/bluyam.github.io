@@ -18,10 +18,15 @@ function initialize() {
   // Create the search box and link it to the UI element.
   var input = /** @type {HTMLInputElement} */(
       document.getElementById('StartingLocation'));
+    var input2 = /** @type {HTMLInputElement} */(
+      document.getElementById('Destination'));
+    
   //map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
   var searchBox = new google.maps.places.SearchBox(
     /** @type {HTMLInputElement} */(input));
+    var searchBox2 = new google.maps.places.SearchBox(
+    /** @type {HTMLInputElement} */(input2));
 
   // [START region_getplaces]
   // Listen for the event fired when the user selects an item from the
@@ -30,11 +35,10 @@ function initialize() {
     var places = searchBox.getPlaces();
     s_lat=places[0].geometry.location.B;
     s_long=places[0].geometry.location.k;
-    d_lat=places[1].geometry.location.B;
-    d_long=places[1].geometry.location.k;
     if (places.length == 0) {
       return;
     }
+
     /*for (var i = 0, marker; marker = markers[i]; i++) {
       marker.setMap(null);
     }
@@ -75,6 +79,14 @@ function initialize() {
     searchBox.setBounds(bounds);
   });*/
   });
+google.maps.event.addListener(searchBox2, 'places_changed', function() {
+    var places2 = searchBox2.getPlaces();
+     d_lat=places2[0].geometry.location.B;
+     d_long=places2[0].geometry.location.k;
+     if (places2.length == 0) {
+         return;
+         }
+    });
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
