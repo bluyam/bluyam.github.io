@@ -1,3 +1,6 @@
+var lat;
+var long;
+
 function initialize() {
 
   var markers = [];
@@ -23,7 +26,8 @@ function initialize() {
   // pick list. Retrieve the matching places for that item.
   google.maps.event.addListener(searchBox, 'places_changed', function() {
     var places = searchBox.getPlaces();
-
+    lat=places[0].geometry.location.B;
+    long=places[0].geometry.location.k;
     if (places.length == 0) {
       return;
     }
