@@ -1,6 +1,9 @@
 var main = function() {
-
-	setTimeout("$('#mainlogo').animate({ width: '-=650px'},2000);", 2000);
+	var intro = function () {
+		$('#chiv').fadeOut("slow");
+		$('#mainlogo').animate({ width: '-=650px'},2000);
+	}
+	setTimeout("intro;", 2000);
 };
 
 $(document).ready(main);
