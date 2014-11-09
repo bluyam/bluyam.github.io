@@ -17,3 +17,7 @@
 .nav li {
   display: inline;
 }
+
+.jumbotron h1 {
+	font-style: oblique;
+}
