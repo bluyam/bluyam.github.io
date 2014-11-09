@@ -1,5 +1,5 @@
 #mainlogo {
-	width: 250px; 
+	width: 200px; 
 }
 
 #sub {
@@ -8,6 +8,9 @@
 
 .nav a {
   color: #000000;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
   text-transform: uppercase;
 }
 
