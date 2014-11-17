@@ -19,11 +19,23 @@
 }
 
 .jumbotron h1 {
+
 	text-align: center;
 	text-shadow: none;
 }
 
 .jumbotron p {
+
 	text-align: center;
 	text-shadow: none;
+}
+
+.crop {
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+}
+
+.crop img {
+	width: 300px;
 }
