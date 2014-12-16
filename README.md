@@ -1,6 +1,6 @@
 # [Kyleismyna.me](http://kyleismyna.me)
 
-Personal website with blog. (in [separate repo](http://github.com/bluyam/blog))
+Personal website with Jekyll+Disqus blog (in [separate repo](http://github.com/bluyam/blog)).
 
 # [WorthTheTrip](http://kyleismyna.me/wttindex.html)
 
