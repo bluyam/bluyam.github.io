@@ -5,3 +5,5 @@ Personal website with Jekyll+Disqus blog (in [separate repo](http://github.com/b
 # [WorthTheTrip](http://kyleismyna.me/wttindex.html)
 
 TAMUHack 2014 Project that uses Google Maps/Places APIs for effective road-trip planning.
+
+Blog to bad added soon!
