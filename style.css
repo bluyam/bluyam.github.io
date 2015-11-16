@@ -1,0 +1,88 @@
+html {
+  background: linear-gradient(#90bdd0, #8a97ce) no-repeat center center fixed;
+  position: relative;
+}
+
+@font-face {
+  font-family: Helvetica;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/164210/HelveticaNeue-UltraLight.otf) format('TrueType');
+  font-weight: 300;
+}
+
+body {
+  font-family: 'Helvetica', sans-serif;
+  color: #FFF;
+  letter-spacing: 1px;
+  text-align: center;
+  width: 98.5%; /* idk */
+  height: 100%;
+  min-width: 800px;
+  min-height: 525px;
+  position: relative;
+}
+
+.icon-bar {
+  overflow: hidden;
+  font-size: 80%;
+}
+
+.left-bar {
+  float: left;
+}
+
+.right-bar {
+  float: right;
+}
+
+.lock {
+  display: block;
+  postion: relative;
+  margin-top: 10px;
+  height: calc(100vh - 40px);
+  min-height: 200px;
+}
+
+.home {
+  display: none;
+  postion: relative;
+  margin-top: 10px;
+  height: calc(100vh - 40px);
+  min-height: 200px;
+}
+
+.time {
+  font-size: 6em;
+}
+
+.date {
+  font-size: 1.2em;
+}
+
+.slider {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 2.2em;
+  font-size: 1.5em;
+}
+
+.row {
+  max-width: 60rem;
+  margin: auto;
+}
+
+.app {
+  display: block;
+  float: left;
+  width: calc(100%/5);
+  padding-bottom: 2.8rem;
+}
+
+.thumb {
+  width: 100px;
+  height: 100px;
+  border-radius: 25px;
+  margin: auto;
+  background: white;
+}
+  
