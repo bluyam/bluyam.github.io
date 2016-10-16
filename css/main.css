@@ -1,0 +1,123 @@
+html {
+  background-color: #010101;
+  font-family: 'Inconsolata', monospace;
+  padding-left: 12.5%;
+  width: 75%; 
+}
+
+body {
+  color: #cccccc;
+}
+
+h1 {
+  font-size: 44px;
+  color: #26e426;
+  font-weight: bold;
+  padding-top: 70px;
+}
+
+a {
+  color: #26e426;
+  text-decoration: none;
+}
+
+#grid {
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.emoji  { 
+  opacity: 0.8;
+  float: left;
+  margin-left: calc(100%/144);
+  margin-right: calc(100%/144); /* Gutter width */
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width:  calc(100%/9);
+  height: 100%;
+  -webkit-transition: background-size .1s ease-in;
+  -moz-transition: background-size .1s ease-in;
+  transition: background-size .1s ease-in;
+} 
+
+.emoji:hover {
+  opacity: 1;
+  background-size: 100%;
+}
+
+#smile {
+  background-image: url(../assets/img/sprites/face.png);
+}
+
+#smile:hover{
+  background-image: url(../assets/img/sprites/face.gif);
+}
+
+#computer {
+    background-image: url(../assets/img/sprites/laptop.png);
+}
+
+#computer:hover {
+  background-image: url(../assets/img/sprites/laptop.gif);
+}
+
+#iphone {
+    background-image: url(../assets/img/sprites/phone.png);
+}
+
+#iphone:hover {
+    background-image: url(../assets/img/sprites/phone.gif);
+}
+
+#art {
+  background-image:
+    url(../assets/img/sprites/design.png);
+}
+
+#art:hover {
+  background-image:
+    url(../assets/img/sprites/design.gif);
+}
+
+#music {
+  background-image: url(../assets/img/sprites/music.png);
+}
+
+#music:hover {
+  background-image: url(../assets/img/sprites/music.gif);
+}
+
+#jesus {
+  background-image: url(../assets/img/sprites/jesus.png);
+}
+
+#jesus:hover {
+  background-image: url(../assets/img/sprites/jesus.gif);
+}
+
+#contact {
+  background-image: url(../assets/img/sprites/mail.png);
+}
+
+#contact:hover {
+  background-image: url(../assets/img/sprites/mail.gif);
+}
+
+#resume {
+  background-image: url(../assets/img/sprites/resume.png);
+}
+
+#resume:hover {
+  background-image: url(../assets/img/sprites/resume.gif);
+}
+
+p {
+  font-size: 22px;
+  margin-bottom: -23px;
+  line-height: 42px;
+}
+
+.content {
+  display: none;
+}
