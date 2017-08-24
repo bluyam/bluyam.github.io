@@ -1,8 +1,65 @@
+@media only screen and (max-device-width: 961px) {
+  h1 {
+    margin-top: 2em;
+    font-size: 34px;
+    line-height: 1.2em;
+  }
+
+  #h {
+    display: none;
+  }
+
+  #grid {
+    display: none !important;
+  }
+
+  .web-only {
+    display: none !important;
+  }
+
+  #intro-content-mobile {
+    display: block !important;
+  }
+
+  p {
+    margin-left: 12.5%;
+    width: 75%;
+    font-size: 20px;
+  }
+
+  .content { 
+    display: block;
+  }
+
+} 
+
+@media (min-device-width: 961px) {
+  h1 {
+    margin-top: 2.5em;
+    font-size: 44px;
+  }
+
+  .content {
+    padding-left: 12.5%;
+    width: 75%; 
+    display: none;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  p {
+    font-size: 22px;
+    line-height: 1.5em;
+  }
+
+}
+
 html {
   background-color: #010101;
-  font-family: 'Inconsolata', monospace;
-  padding-left: 12.5%;
-  width: 75%; 
+  font-family: 'Roboto Mono', monospace;
+
 }
 
 body {
@@ -10,10 +67,9 @@ body {
 }
 
 h1 {
-  font-size: 44px;
   color: #26e426;
-  font-weight: bold;
-  padding-top: 70px;
+  margin-left: 12.5%;
+  width: 75%; 
 }
 
 a {
@@ -24,6 +80,8 @@ a {
 #grid {
   padding-top: 1rem;
   padding-bottom: 1.5rem;
+  padding-left: 12.5%;
+  width: 75%; 
 }
 
 .emoji  { 
@@ -112,12 +170,41 @@ a {
   background-image: url(../assets/img/sprites/resume.gif);
 }
 
-p {
-  font-size: 22px;
-  margin-bottom: -23px;
-  line-height: 42px;
+#smile-content h1,
+#smile-content a {
+  color:#00cbfd;
 }
 
-.content {
-  display: none;
+#computer-content h1,
+#computer-content a {
+  color:#f5ff00;
+}
+
+#iphone-content h1,
+#iphone-content a {
+  color: #ff9900;
+}
+
+#art-content h1,
+#art-content a {
+  color: #9f00f8;
+}
+
+#music-content h1,
+#music-content a {
+  color: #ed00f1;
+}
+
+#jesus-content h1,
+#jesus-content a {
+  color: #fc0800;
+}
+
+#contact-content h1,
+#contact-content a {
+  color: #26e426;
+}
+
+p {
+  margin-bottom: -23px;
 }
