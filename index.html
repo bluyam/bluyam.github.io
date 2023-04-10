@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Developer, producer, designer, and follower of Jesus."/>
+    <meta name="description" content="Developer, producer, and follower of Jesus." />
     <title>Kyle Wilson</title>
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="fav/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="apple-touch-icon" sizes="57x57" href="fav/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="fav/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="fav/apple-icon-72x72.png">
@@ -19,7 +20,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="fav/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="fav/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="fav/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="fav/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="fav/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
@@ -27,84 +28,76 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono">
 </head>
+
 <body onload="adjustHeight()">
-        <h1 class="web-only" id="h">hello there!</h1>
-        <div id="grid" class="clearfix">
-            <div id="smile" class="emoji" color="#00cbfd" h="my name is kyle."></div>
-            <div id="computer" class="emoji" color="#f5ff00" h="lately, i do web dev."></div>
-            <div id="iphone" class="emoji" color="#ff9900" h="sometimes, i make apps."></div>
-            <div id="art" class="emoji" color="#9f00f8" h="i like making pretty things."></div>
-            <div id="music" class="emoji" color="#ed00f1" h="i also enjoy making music."></div>
-            <div id="jesus" class="emoji" color="#fc0800" h="lastly, i have new life."></div>
-            <div id="contact" class="emoji" color="#26e426" h="let's keep in touch!"></div>
-            <div id="resume" class="emoji" onclick="javascript:window.open('http://kyleismyna.me/KyleWilsonResume.pdf', '_blank');"></div>
-        </div>
-        <div class="content web-only" id="intro-content-web" style="display:block">
-            <p style="white-space: pre-wrap">it's nice to meet you.&#10;click the sprites above to learn a little more about me.</p>
-        </div>
-        <div class="content" id="smile-content">
-            <h1 class="mobile-only">my name is kyle.</h1>
-            <p>i'm a super-senior at texas a&m university. this december, i'll be graduating with a bs in computer science and digital art.</p>
-        </div>
-        <div class="content" id="computer-content">
-            <h1 class="mobile-only">lately, i do web dev.</h1>
-            <p>when i was introduced to react-redux during my internship at capital one this summer, it was love at first
-                <a href="https://github.com/bluyam/yfm-pod-simulator" target="_blank">byte</a>. 
-                in the past, i've worked in 
-                <a href="https://github.com/bluyam/art-draw-public" target="_blank">ruby on rails</a> 
-                and vanilla 
-                <a href="https://github.com/bluyam/HackTx" target="_blank">html/css/js</a>.
-            </p>
-        </div>
-        <div class="content" id="iphone-content">
-            <h1 class="mobile-only">sometimes, i make apps.</h1>
-            <p>my preferred flavor of software engineering is ios development. objective c is aight, but 
-                <a href="https://github.com/bluyam?utf8=%E2%9C%93&tab=repositories&q=&type=&language=swift" target="_blank">swift</a>  
-                is super 
-                <a href="http://phreshapp.herokuapp.com/" target="_blank">fresh</a>.
-            </p>
-        </div>
-        <div class="content" id="art-content">
-            <h1 class="mobile-only">i like making pretty things.</h1>
-            <p>whether it's completing branding work in illustrator or doodling in my notebook, art and design are central to everything i do.</p>
-        </div>
-        <div class="content" id="music-content">
-            <h1 class="mobile-only">i also enjoy making music.</h1>
-            <p>i started writing songs in middle school, and i'd like to think 
-                <a href="https://soundcloud.com/kylesnewsongs" target="_blank">i've improved</a>. 
-                i enjoy singing/playing 
-                <a href="https://www.youtube.com/watch?v=iRz6bV_MjGU" target="_blank">gigs</a> 
-                when i can and      
-                <a href="https://www.youtube.com/watch?v=oEg4F-z-Rl8" target="_blank">jamming</a> 
-                with my friends.
-            </p>
-        </div>
-        <div class="content" id="jesus-content">
-            <h1 class="mobile-only">lastly, i have new life.</h1>
-            <p>last but certainly not least, Jesus
-                <a href="https://www.youtube.com/watch?v=VH-40RPzVio&list=PLuMB9xNAcM7gDKcK4oyOPvedh8Giv99fs" target="_blank">saved my life</a> 
-                this past semester. i hope to glorify Him in everything that i do.
-            </p>
-        </div>
-        <div class="content" id="contact-content">
-            <h1 class="mobile-only">let's keep in touch!</h1>
-            <p>if you want to chat, or you think we could make something cool together, message me on 
-                <a href="https://www.linkedin.com/in/mynameiskyle" target="_blank">linkedin</a>, 
-                or shoot me an 
-                <a href="mailto:kydanielwilson@gmail.com">email</a>. 
-                i'm ready to go out into the world and do something awesome!
-            </p>
-        </div>
-        <div style="display:none">
-            <img src="./assets/img/sprites/face.gif" width="1" height="1" alt="Face" />
-            <img src="./assets/img/sprites/laptop.gif" width="1" height="1" alt="Laptop" />
-            <img src="./assets/img/sprites/phone.gif" width="1" height="1" alt="Phone" />
-            <img src="./assets/img/sprites/design.gif" width="1" height="1" alt="Design" />
-            <img src="./assets/img/sprites/music.gif" width="1" height="1" alt="Music" />
-            <img src="./assets/img/sprites/jesus.gif" width="1" height="1" alt="Jesus" />
-            <img src="./assets/img/sprites/mail.gif" width="1" height="1" alt="Mail" />
-            <img src="./assets/img/sprites/resume.gif" width="1" height="1" alt="Resume" />
-        </div>
+    <h1 class="web-only" id="h">hello there!</h1>
+    <div id="grid" class="clearfix">
+        <div id="smile" class="emoji" color="#00cbfd" h="my name is kyle."></div>
+        <div id="computer" class="emoji" color="#f5ff00" h="lately, i do web dev."></div>
+        <div id="iphone" class="emoji" color="#ff9900" h="sometimes, i make apps."></div>
+        <div id="music" class="emoji" color="#ed00f1" h="i also enjoy making music."></div>
+        <div id="jesus" class="emoji" color="#fc0800" h="lastly, i have new life."></div>
+        <div id="contact" class="emoji" color="#26e426" h="let's keep in touch!"></div>
+        <div id="resume" class="emoji"
+            onclick="javascript:window.open('http://bluyam.github.io/KyleWilsonResume.pdf', '_blank');"></div>
+    </div>
+    <div class="content web-only" id="intro-content-web" style="display:block">
+        <p style="white-space: pre-wrap">it's nice to meet you.&#10;click the sprites above to learn a little more about me.</p>
+    </div>
+    <div class="content" id="smile-content">
+        <h1 class="mobile-only">my name is kyle.</h1>
+        <p>i'm a full-stack software engineer with about 5 years of experience in technology.</p>
+    </div>
+    <div class="content" id="computer-content">
+        <h1 class="mobile-only">lately, i do web dev.</h1>
+        <p>i have 3 years of experience on the Angular/Java stack. i also led a team in building an IAM dashboard from
+            scratch using React at
+            <a href="https://capitalone.com" target="_blank">Capital One</a>,
+            and used lots of vanilla html/css/js to manage the sites at
+            <a href="https://denisonministries.org" target="_blank">Denison Ministries</a>.
+        </p>
+    </div>
+    <div class="content" id="iphone-content">
+        <h1 class="mobile-only">occasionally, i make apps.</h1>
+        <p>i was a top undergraduate performer in our school's iOS bootcamp, with 4/6
+            <a href="https://github.com/bluyam?utf8=%E2%9C%93&tab=repositories&q=&type=&language=swift"
+                target="_blank">projects</a>
+            rated best in class.
+            using Swift, i built a mobile app to serve as a frontend for Capital One's internal social network.
+        </p>
+    </div>
+    <div class="content" id="music-content">
+        <h1 class="mobile-only">i also enjoy making music.</h1>
+        <p>songs that i have produced, sung and/or written have accumulated 200K+ plays on
+            <a href="https://open.spotify.com/playlist/2ucRlBDjoi4veKAN24rWol">Spotify.</a>
+        </p>
+    </div>
+    <div class="content" id="jesus-content">
+        <h1 class="mobile-only">lastly, i have new life.</h1>
+        <p>last but certainly not least, Jesus
+            <a href="https://www.youtube.com/watch?v=VH-40RPzVio&list=PLuMB9xNAcM7gDKcK4oyOPvedh8Giv99fs"
+                target="_blank">saved my life</a>. i hope to glorify Him in everything that i do.
+        </p>
+    </div>
+    <div class="content" id="contact-content">
+        <h1 class="mobile-only">let's keep in touch!</h1>
+        <p>if you want to chat, or you think we could make something cool together, message me on
+            <a href="https://www.linkedin.com/in/mynameiskyle" target="_blank">LinkedIn</a>,
+            or shoot me an
+            <a href="mailto:kydanielwilson@gmail.com">email</a>.
+            i'm sure we could do great things together!
+        </p>
+    </div>
+    <div style="display:none">
+        <img src="./assets/img/sprites/face.gif" width="1" height="1" alt="Face" />
+        <img src="./assets/img/sprites/laptop.gif" width="1" height="1" alt="Laptop" />
+        <img src="./assets/img/sprites/phone.gif" width="1" height="1" alt="Phone" />
+        <img src="./assets/img/sprites/music.gif" width="1" height="1" alt="Music" />
+        <img src="./assets/img/sprites/jesus.gif" width="1" height="1" alt="Jesus" />
+        <img src="./assets/img/sprites/mail.gif" width="1" height="1" alt="Mail" />
+        <img src="./assets/img/sprites/resume.gif" width="1" height="1" alt="Resume" />
+    </div>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
+
 </html>
